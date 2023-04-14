@@ -84,10 +84,12 @@ const App = () => {
       } else {
         const newPerson = 
         {
-          id: getId(),
+          id: getId(persons) + 1,
           name: newName,
           number: numberPhone
         }
+
+        console.log(newPerson);
 
         const options = {
           method: 'POST',

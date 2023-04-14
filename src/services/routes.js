@@ -1,6 +1,6 @@
 
 
-const baseUrl = `http://localhost:3005/notes`;
+const baseUrl = `http://localhost:3001/api/persons`;
 
 
 // get data db

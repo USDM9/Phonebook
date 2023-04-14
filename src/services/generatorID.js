@@ -1,6 +1,5 @@
-export const getId = () => {
-    let a =  Date.now().toString(30);
-    let b = Math.random().toString(36).substring(2);
-    const id = a + b ;
-    return id;
+export const getId = (persons) => {
+    const ids = persons.map(person => person.id)
+    const maxId = ids === 0 ? ids : Math.max(...ids)
+    return maxId;
 };
